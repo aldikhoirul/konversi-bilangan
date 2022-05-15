@@ -89,7 +89,7 @@
     <script>
       function konversi() {
         x = document.getElementById("convert").value;
-        x = parseInt(x);
+        x = parseFloat(x);
         if (isNaN(x) || document.getElementById("convert").value == "") {
           swal ( "Oops" ,  "Masukkan Nilai Desimal yang benar" ,  "error" );
           document.getElementById("convert").value = "";
