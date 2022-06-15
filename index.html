@@ -84,6 +84,7 @@
                 </form>
                 <div id="results" class="pt-5">
                   <h3 class="pb-3">Hasil Konversi</h3>
+                  <form id="hasil">
                       <div class="mb-3 row">
                         <label for="biner" class="col-sm-3 col-form-label">Bilangan Biner</label>
                         <div class="col mx-auto">
@@ -102,6 +103,7 @@
                           <input type="text" class="form-control" id="oktal" readonly />
                         </div>
                       </div>
+                    </form>
                 </div>
               </div>
             </div>
@@ -127,6 +129,7 @@
         if (isNaN(x) || convert == "") {
           swal("Oops", "Masukkan Bilangan Desimal dengan benar", "error");
           document.getElementById('convert').value = "";
+          document.getElementById('hasil').reset();
           document.getElementById('convert').focus();
 
           e.preventDefault();
